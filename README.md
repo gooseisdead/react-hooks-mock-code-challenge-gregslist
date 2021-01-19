@@ -25,6 +25,14 @@ find the [Core Deliverables](#Core-Deliverables) section.
 
 ## Core Deliverables
 
+
+//
+--App
+----Header
+------Search
+----ListingContainer
+------ListingCard
+
 As a user:
 
 1. When the app starts, I can see all listings.
