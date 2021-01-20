@@ -14,10 +14,21 @@ function App() {
       });
     }, [])
 
+    function handleDeleteClick(id) {
+      fetch(`http://localhost:6001/listings/${id}`, {
+        method: "DELETE",
+      })
+        .then((r) => r.json())
+        .then(() => {
+          const updatedListings = listings.filter((q) => q.id !== id);
+          setListings(updatedListings);
+        });
+    }
+
   return (
     <div className="app">
       <Header />
-      <ListingsContainer api={listings} />
+      <ListingsContainer api={listings} handleDeleteClick={handleDeleteClick} />
     </div>
   );
 }
