@@ -36,6 +36,13 @@ header h1 {
   justify-content: center;
 }
 
+.new-listing-form {
+  flex: 1 1 auto;
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+}
+
 .searchbar input {
   width: 90%;
   font-size: 1rem;
